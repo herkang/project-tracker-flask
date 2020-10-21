@@ -127,7 +127,7 @@ def get_grades_by_github(github):
 
     for row in rows:
         print(f"Student {github} received grade of {row[1]} for {row[0]}")
-
+    
     return rows
 
 
