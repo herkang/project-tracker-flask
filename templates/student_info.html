@@ -7,6 +7,11 @@
     </head>
     <body>
         <h1> {{ first}} {{ last }} </h1>
-        <p>Github Account: {{ github }} </p>
+        <p>Github Account: {{ github }}<br>
+            {% for project in project_list %}
+                <ul>Project Name: {{ project[0] }}</ul>
+                <ul>Grade: {{ project[1] }}</ul>
+            {% endfor %}
+        </p>
     </body>
 </html>
